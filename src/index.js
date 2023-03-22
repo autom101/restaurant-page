@@ -1,8 +1,11 @@
-import { menu } from "./menu";
-import { aboutUs } from "./about-us";
-import { contactUs } from "./contact-us";
+import "./reset.css";
+import "./styles.css";
 
-console.log("Test from index.js");
-console.log(contactUs());
-console.log(menu());
-console.log(aboutUs());
+import { menu } from "./menu";
+import { ourStory } from "./about-us";
+import { contactUs } from "./contact-us";
+import { homePageHeader } from "./home-page";
+
+const body = document.querySelector("body");
+
+body.appendChild(homePageHeader());
