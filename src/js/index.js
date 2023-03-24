@@ -1,5 +1,5 @@
-import "./reset.css";
-import "./styles.css";
+import "../css/reset.css";
+import "../css/styles.css";
 
 import { menu } from "./menu";
 import { ourStory } from "./about-us";

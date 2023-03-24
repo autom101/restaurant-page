@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
-    menu: "./src/menu.js",
-    aboutUs: "./src/about-us.js",
-    contactUs: "./src/contact-us.js",
-    homePage: "./src/home-page.js",
+    index: "./src/js/index.js",
+    menu: "./src/js/menu.js",
+    aboutUs: "./src/js/about-us.js",
+    contactUs: "./src/js/contact-us.js",
+    homePage: "./src/js/home-page.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -24,6 +24,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },

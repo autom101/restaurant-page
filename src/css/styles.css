@@ -1,0 +1,48 @@
+/* Colors to use: 
+Header-background: #0f766e;
+Main-background: #5eead4; Or maybe use a background-image?
+Footer-background: #5eead4;
+
+*/
+
+body {
+  position: relative;
+}
+
+header {
+  background-color: #0f766e;
+  color: white;
+  height: 7%;
+
+  box-shadow: inset 0px -2px 2px 2px rgba(33, 13, 88, 0.3);
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 1rem;
+  font-size: 32px;
+
+  display: flex;
+  gap: 2rem;
+}
+
+main {
+  background-image: url("../img/restaurant-photo-pixabay.jpg");
+  height: 84%;
+}
+
+footer {
+  height: 7%;
+}
