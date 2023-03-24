@@ -9,12 +9,20 @@ const homePageHeader = () => {
 
     const navLinksUl = document.createElement("ul");
 
-    for (let i = 0; i < 3; i++) {
-      let navLink = document.createElement("li");
-      navLink.textContent = `Link ${i + 1}`;
+    let menuNavLink = document.createElement("li");
+    menuNavLink.textContent = "Menu";
+    menuNavLink.classList.add("menu-nav-link");
+    navLinksUl.appendChild(menuNavLink);
 
-      navLinksUl.appendChild(navLink);
-    }
+    let aboutUsNavLink = document.createElement("li");
+    aboutUsNavLink.textContent = "Our Story";
+    aboutUsNavLink.classList.add("about-us-nav-link");
+    navLinksUl.appendChild(aboutUsNavLink);
+
+    let contactUsNavLink = document.createElement("li");
+    contactUsNavLink.textContent = "Get in Touch";
+    contactUsNavLink.classList.add("contact-us-nav-link");
+    navLinksUl.appendChild(contactUsNavLink);
 
     nav.appendChild(navLinksUl);
     return nav;
