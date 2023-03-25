@@ -5,18 +5,23 @@ Footer-background: #5eead4;
 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
+  height: 100vh;
 }
 
 header {
-  background-color: #0f766e;
+  background-color: #9a3412;
   color: white;
   height: 7%;
 
   box-shadow: inset 0px -2px 2px 2px rgba(33, 13, 88, 0.3);
 
-  padding: 1rem;
+  padding: 0 1rem;
 
   display: flex;
   justify-content: center;
@@ -39,10 +44,27 @@ ul {
 }
 
 main {
-  background-image: url("../img/restaurant-photo-pixabay.jpg");
-  height: 84%;
+  height: 86%;
+}
+
+main img {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
+  background-color: #9a3412;
+  color: white;
   height: 7%;
+
+  box-shadow: inset 0px 2px 2px 2px rgba(33, 13, 88, 0.3);
+
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 70%;
 }

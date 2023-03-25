@@ -1,3 +1,9 @@
+import facebook from "../img/facebook.svg";
+import instagram from "../img/instagram.svg";
+import twitter from "../img/twitter.svg";
+
+import retaurantPhoto from "../img/restaurant-photo-pixabay.jpg";
+
 const homePageContent = () => {
   //
 };
@@ -28,34 +34,50 @@ const homePageHeader = () => {
     return nav;
   };
 
+  const createHeader = () => {
+    const header = document.createElement("header");
+    const heading = document.createElement("h1");
+    heading.textContent = "Fakestaurant";
+    header.appendChild(heading);
+    return header;
+  };
   // ...Contact Info... <- (height < 5%, sticky, black background with white text)
 
-  const header = document.createElement("header");
-
-  const heading = document.createElement("h1");
-  heading.textContent = "Fakestaurant";
-
-  header.appendChild(heading);
+  const header = createHeader();
   header.appendChild(createHomePageNav());
 
   return header;
 };
 
 const homePageMain = () => {
-  //
+  const main = document.createElement("main");
+  const mainImage = document.createElement("img");
+  mainImage.src = retaurantPhoto;
+  main.appendChild(mainImage);
+  return main;
 };
 
 const homePageFooter = () => {
-  //Should contain phone number and address?
-  const footerContacts = () => {
-    const contactContainer = document.createElement("div");
-    const phoneNumber = document.createElement("div");
-    const address = document.createElement("div");
+  // const contactContainer = document.createElement("div");
+  // const phoneNumber = document.createElement("div");
+  // const address = document.createElement("div");
+  const createIcons = () => {
+    const instagramIcon = document.createElement("img");
+    instagramIcon.src = instagram;
+    footer.appendChild(instagramIcon);
+
+    const facebookIcon = document.createElement("img");
+    facebookIcon.src = facebook;
+    footer.appendChild(facebookIcon);
+
+    const twitterIcon = document.createElement("img");
+    twitterIcon.src = twitter;
+    footer.appendChild(twitterIcon);
   };
 
   const footer = document.createElement("footer");
-
-  footer.textContent = "";
+  createIcons();
+  return footer;
 };
 
-export { homePageHeader };
+export { homePageHeader, homePageMain, homePageFooter };
