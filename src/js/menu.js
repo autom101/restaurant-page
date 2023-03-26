@@ -63,7 +63,7 @@ const restaurantMenu = () => {
     }
   };
 
-  const menu = document.createElement("div");
+  const menu = document.createElement("section");
   menu.classList.add("menu");
   createMenuItem(6);
   return menu;
