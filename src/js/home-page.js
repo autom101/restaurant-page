@@ -2,7 +2,7 @@ import facebook from "../img/facebook.svg";
 import instagram from "../img/instagram.svg";
 import twitter from "../img/twitter.svg";
 
-import retaurantPhoto from "../img/restaurant-photo-pixabay.jpg";
+import retaurantPhoto from "../img/restaurant-photo-pixabay.png";
 
 const homePageContent = () => {
   //
@@ -51,9 +51,6 @@ const homePageHeader = () => {
 
 const homePageMain = () => {
   const main = document.createElement("main");
-  const mainImage = document.createElement("img");
-  mainImage.src = retaurantPhoto;
-  main.appendChild(mainImage);
   return main;
 };
 
