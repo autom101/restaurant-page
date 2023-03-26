@@ -5,6 +5,7 @@ Footer-background: #5eead4;
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Varela+Round&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -17,8 +18,8 @@ body {
 }
 
 header {
-  background-color: #995a0b;
   color: white;
+  background: linear-gradient(#000, #652e10);
   height: 4rem;
 
   box-shadow: inset 0px -2px 2px 2px rgba(33, 13, 88, 0.3);
@@ -125,6 +126,7 @@ main {
 .about-us {
   height: 100%;
   width: 80%;
+  margin: 1rem;
   background-color: #0f172ab0;
 }
 
@@ -161,7 +163,7 @@ main {
 }
 
 footer {
-  background-color: #995a0b;
+  background: linear-gradient(#652e10, #000);
   color: white;
   height: 4rem;
 
@@ -172,5 +174,12 @@ footer {
 }
 
 footer img {
+  color: white;
   height: 3rem;
+  transition: 0.3 ease;
+}
+
+footer img:hover {
+  cursor: pointer;
+  scale: 1.05;
 }

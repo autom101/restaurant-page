@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"25f258e4bb39a7967b5e.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/facebook.svg?");
+eval("module.exports = __webpack_require__.p + \"f20571328cd86147a8f0.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/facebook.svg?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("module.exports = __webpack_require__.p + \"25f258e4bb39a7967b5e.svg\";\n\n
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"51f90461c0dfed370bf6.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/instagram.svg?");
+eval("module.exports = __webpack_require__.p + \"162c299bdaf4b508ce56.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/instagram.svg?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("module.exports = __webpack_require__.p + \"e385d3f06db1ce602f83.png\";\n\n
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"77a2f5734999924fb343.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/twitter.svg?");
+eval("module.exports = __webpack_require__.p + \"63c262ccad0a8d817420.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/img/twitter.svg?");
 
 /***/ })
 

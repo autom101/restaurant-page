@@ -7,6 +7,7 @@ import "../img/facebook.svg";
 import "../img/instagram.svg";
 import "../img/twitter.svg";
 import "../img/restaurant-photo-pixabay.png";
+import "../img/texture.jpg";
 
 import "../img/menu-item-images/chicken-wings.jpg";
 import "../img/menu-item-images/poutine.jpg";
