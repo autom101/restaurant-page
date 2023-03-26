@@ -58,7 +58,6 @@ main {
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
-  margin-bottom: 1rem;
 
   color: #e5e7eb;
   font-size: 20px;
@@ -77,6 +76,7 @@ main {
 }
 
 .menuItems img {
+  display: block;
   padding-top: 2rem;
   height: 500px;
   width: 500px;
@@ -86,11 +86,12 @@ main {
 }
 
 .menuItems h2 {
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
 
   border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 
   font-family: "Lobster", cursive;
 }

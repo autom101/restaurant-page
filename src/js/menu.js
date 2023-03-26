@@ -26,19 +26,19 @@ const menu = () => {
     menuItems[0][2].title = "Photo by Chad Montano on Unsplash";
     menuItems[0][0].textContent = "Chicken Wings";
     menuItems[0][1].textContent =
-      "Chicken wings can be cooked in many different ways - you can fry, bake, broil, or even slow-cook them. For the healthiest preparation, try baking or broiling the wings and adding a light seasoning for flavor. You can also balance out the greasy taste with a favorite sauce. Serve chicken wings with a side salad, crudité, or fresh veggie sticks. Enjoy!";
+      "Choose from our classic fried wings flavored with garlic, hot buffalo, honey barbecue, or opt for our boneless wings. Our sides are absolutely delicious, so don't forget to add some fries, onion rings, mozzarella sticks, mac & cheese, and slaw! Enjoy!";
 
     menuItems[1][2].src = poutine;
     menuItems[1][2].title = "Photo by Taine Noble on Unsplash";
     menuItems[1][0].textContent = "Poutine";
     menuItems[1][1].textContent =
-      "Poutine is a famous Canadian dish, traditionally made with French fries, cheese curds, and gravy. It was invented in the late 1950s in rural Quebec and is now a regular item on menus across Canada. It's become a cultural icon, with many variations using ingredients such as bacon, mushrooms, and pulled pork. It can be a meal on its own or a side dish. Poutine is hearty, cheesy, and comforting, making it a popular choice among Canadians.";
+      "Our menu offers a variety of delicious poutine dishes to enjoy. Start by choosing your favorite type of cheese curds - we have both classic cheddar and gouda. Then, top your poutine with a flavor of your choice – options include savory bacon, BBQ pulled pork, and vegan chili. Finally, decide on one of our custom sauces such as herb garlic aioli, honey mustard, and smoked mayo.";
 
     menuItems[2][2].src = fajitas;
     menuItems[2][2].title = "Photo by micheile henderson on Unsplash";
     menuItems[2][0].textContent = "Fajitas";
     menuItems[2][1].textContent =
-      "Fajitas are a classic Tex-Mex favorite. They consist of strips of steak, chicken or shrimp with bell peppers and onions. The meat is cooked up in a skillet, combined with the peppers and onions, and then served with tortillas, guacamole, sour cream and salsa. Fajitas are great for tacos, burritos or eating just as they are. You can adjust spice levels and ingredients to your liking and make amazingly tasty creations!";
+      "Our menu includes tasty, authentic Mexican cuisine. Try our signature fajitas, made with marinated beef, chicken or shrimp, served with grilled peppers and onions, fresh guacamole and warm flour tortillas. We also offer burritos, tacos, nachos and enchiladas. All dishes are prepared using fresh ingredients and traditional Mexican flavors for an amazing culinary experience. Enjoy a delicious margarita with your meal to really get the full flavor of Mexico!";
 
     menuItems[3][2].src = caesarSalad;
     menuItems[3][2].title = "Photo by Ryan Concepcion on Unsplash";
