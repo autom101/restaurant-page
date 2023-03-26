@@ -4,10 +4,6 @@ import twitter from "../img/twitter.svg";
 
 import retaurantPhoto from "../img/restaurant-photo-pixabay.png";
 
-const homePageContent = () => {
-  //
-};
-
 const homePageHeader = () => {
   //Creates nav with 3 items in it
   const createHomePageNav = () => {
@@ -51,6 +47,7 @@ const homePageHeader = () => {
 
 const homePageMain = () => {
   const main = document.createElement("main");
+  main.setAttribute("style", `background-image: url(${retaurantPhoto});`);
   return main;
 };
 
