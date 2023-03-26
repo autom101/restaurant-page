@@ -6,7 +6,7 @@ import caesarSalad from "../img/menu-item-images/caesar-salad.jpg";
 import bbqRice from "../img/menu-item-images/bbq-beans-and-rice.jpg";
 import iceCream from "../img/menu-item-images/ice-cream.jpg";
 
-const menu = () => {
+const restaurantMenu = () => {
   const createMenuItem = (numberOfMenuItems) => {
     const menuItems = [[], [], [], [], [], []];
     for (let i = 0; i < numberOfMenuItems; i++) {
@@ -69,4 +69,4 @@ const menu = () => {
   return menu;
 };
 
-export { menu };
+export { restaurantMenu };

@@ -16,19 +16,28 @@ import "../img/menu-item-images/bbq-beans-and-rice.jpg";
 import "../img/menu-item-images/ice-cream.jpg";
 
 //import javascript files
-import { menu } from "./menu";
+import { restaurantMenu } from "./menu";
 import { ourStory } from "./about-us";
 import { contactUs } from "./contact-us";
 import { homePageHeader, homePageMain, homePageFooter } from "./home-page";
 
 const body = document.querySelector("body");
+const menu = restaurantMenu;
 
-const header = homePageHeader();
-const main = homePageMain();
-const footer = homePageFooter();
+const loadMenu = () => {
+  menuNavLink = document.querySelector(".menu-nav-link");
+  menuNavLink.addEventListener("click", () => {
+    main.appendChild(menu);
+  });
+};
 
-main.appendChild(menu());
+onload = () => {
+  const header = homePageHeader();
+  const main = homePageMain();
+  const footer = homePageFooter();
 
-body.appendChild(header);
-body.appendChild(main);
-body.appendChild(footer);
+  main.appendChild(menu());
+  body.appendChild(header);
+  body.appendChild(main);
+  body.appendChild(footer);
+};
