@@ -22,55 +22,58 @@ import { ourStory } from "./about-us";
 import { contactUs } from "./contact-us";
 import { homePageHeader, homePageMain, homePageFooter } from "./home-page";
 
-//create body, header, main, and footer
+//create global variables for use later on
 const body = document.querySelector("body");
 const header = homePageHeader();
 const main = homePageMain();
 const footer = homePageFooter();
 
-//create different modules
-let menu = restaurantMenu();
-let contacts = contactUs();
-let aboutUs = ourStory();
+const menu = restaurantMenu();
+const contacts = contactUs();
+const aboutUs = ourStory();
 
-const removeChildren = () => {
-  if (main.contains(menu)) {
-    main.removeChild(menu);
-  }
-  if (main.contains(contacts)) {
-    main.removeChild(contacts);
-  }
-  if (main.contains(aboutUs)) {
-    main.removeChild(aboutUs);
-  }
-  return;
-};
+const load = () => {
+  const removeChildren = () => {
+    if (main.contains(menu)) {
+      main.removeChild(menu);
+    }
+    if (main.contains(contacts)) {
+      main.removeChild(contacts);
+    }
+    if (main.contains(aboutUs)) {
+      main.removeChild(aboutUs);
+    }
+    return;
+  };
 
-const loadMenu = () => {
-  const menuNavLink = document.querySelector(".menu-nav-link");
-  menuNavLink.addEventListener("click", (e) => {
-    e.stopPropagation();
-    removeChildren();
-    main.appendChild(menu);
-  });
-};
+  const loadMenu = () => {
+    const menuNavLink = document.querySelector(".menu-nav-link");
+    menuNavLink.addEventListener("click", (e) => {
+      e.stopPropagation();
+      removeChildren();
+      main.appendChild(menu);
+    });
+  };
 
-const loadContacts = () => {
-  const contactUsNavLink = document.querySelector(".contact-us-nav-link");
-  contactUsNavLink.addEventListener("click", (e) => {
-    e.stopPropagation();
-    removeChildren();
-    main.appendChild(contacts);
-  });
-};
+  const loadContacts = () => {
+    const contactUsNavLink = document.querySelector(".contact-us-nav-link");
+    contactUsNavLink.addEventListener("click", (e) => {
+      e.stopPropagation();
+      removeChildren();
+      main.appendChild(contacts);
+    });
+  };
 
-const loadAbout = () => {
-  const aboutUsNavLink = document.querySelector(".about-us-nav-link");
-  aboutUsNavLink.addEventListener("click", (e) => {
-    e.stopPropagation();
-    removeChildren();
-    main.appendChild(aboutUs);
-  });
+  const loadAbout = () => {
+    const aboutUsNavLink = document.querySelector(".about-us-nav-link");
+    aboutUsNavLink.addEventListener("click", (e) => {
+      e.stopPropagation();
+      removeChildren();
+      main.appendChild(aboutUs);
+    });
+  };
+
+  return { loadMenu, loadContacts, loadAbout };
 };
 
 onload = () => {
@@ -79,7 +82,7 @@ onload = () => {
   body.appendChild(header);
   body.appendChild(main);
   body.appendChild(footer);
-  loadMenu();
-  loadContacts();
-  loadAbout();
+  load.loadMenu();
+  load.loadContacts();
+  load.loadAbout();
 };
