@@ -82,7 +82,7 @@ onload = () => {
   body.appendChild(header);
   body.appendChild(main);
   body.appendChild(footer);
-  load.loadMenu();
-  load.loadContacts();
-  load.loadAbout();
+  load().loadMenu();
+  load().loadContacts();
+  load().loadAbout();
 };
