@@ -16,7 +16,7 @@
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ourStory\": () => (/* binding */ ourStory)\n/* harmony export */ });\n//For creating the abous-us section of the restaurant\nconst ourStory = () => {\n  return \"This is from the aboutUs\";\n};\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/about-us.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ourStory\": () => (/* binding */ ourStory)\n/* harmony export */ });\n//For creating the abous-us section of the restaurant\nconst ourStory = () => {\n  const createContacts = () => {\n    const contactHeading = document.createElement(\"h2\");\n    contactHeading.textContent = \"Contact Us\";\n    contactHeading.style.textAlign = \"center\";\n  };\n  const contacts = document.createElement(\"section\");\n  contacts.classList.add(\"about-us\");\n  return contacts;\n};\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/about-us.js?");
 
 /***/ })
 
