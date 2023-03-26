@@ -11,7 +11,7 @@ Footer-background: #5eead4;
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   font-family: "Varela Round", sans-serif;
 }
@@ -139,6 +139,18 @@ main {
   padding: 2rem;
   color: #e5e7eb;
   font-size: 24px;
+}
+
+.contact-us span:nth-child(n + 1) {
+  font-size: 20px;
+  color: #cbd5e1;
+}
+
+.contact-us:first-child span.logo-about {
+  margin-top: 4rem;
+  font-size: 48px;
+  font-weight: 1000;
+  font-family: "Dancing Script", cursive;
 }
 
 .about-us img {

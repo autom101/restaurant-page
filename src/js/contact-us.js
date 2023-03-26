@@ -1,11 +1,7 @@
 //For the contact us tab of the restaurant
 const contactUs = () => {
-  const createContacts = () => {
-    const contactDiv = document.createElement("div");
-    const contactHeading = document.createElement("h2");
-    contactHeading.textContent = "Stay in Touch!";
-    contactHeading.style.textAlign = "center";
-
+  //Create filler text for contact us
+  const createContactText = () => {
     const contactUsInfo = [[], [], [], [], []];
     for (let i = 0; i < contactUsInfo.length; i++) {
       contactUsInfo[i] = document.createElement("p");
@@ -17,14 +13,45 @@ const contactUs = () => {
     contactUsInfo[2].textContent = "Phone: (123) 456-7890";
     contactUsInfo[3].textContent = "Email: info@fakestaurant.com";
     contactUsInfo[4].textContent =
-      "Come by our restaurant and experience our culinary delights for yourself! Our address is: 123 Main Street Anytown, ST, Edmonton AB. We look forward to seeing you!";
+      "Come by our restaurant and experience our culinary delights for yourself!";
+    return contactUsInfo;
+  };
+  //Create address for contact us
+  const createAddress = () => {
+    const contactAddressArray = [[], [], [], []];
+
+    for (let i = 0; i < contactAddressArray.length; i++) {
+      contactAddressArray[i] = document.createElement("span");
+    }
+
+    contactAddressArray[0].textContent = "Fakestaurant";
+    contactAddressArray[0].classList.add("logo-about");
+    contactAddressArray[1].textContent = "123 Fake ST";
+    contactAddressArray[2].textContent = "Edmonton, AB";
+    contactAddressArray[3].textContent = "Canada, A1A 9Z9";
+
+    return contactAddressArray;
+  };
+
+  const createContacts = () => {
+    const contactDiv = document.createElement("div");
+    const contactHeading = document.createElement("h2");
+    contactHeading.textContent = "Stay in Touch!";
+    contactHeading.style.textAlign = "center";
+
+    const contactUsInfo = createContactText();
+    const contactAddress = createAddress();
 
     contactDiv.appendChild(contactHeading);
     for (let i = 0; i < contactUsInfo.length; i++) {
       contactDiv.appendChild(contactUsInfo[i]);
     }
+    for (let i = 0; i < contactAddress.length; i++) {
+      contactDiv.appendChild(contactAddress[i]);
+    }
     return contactDiv;
   };
+
   const contacts = document.createElement("section");
   contacts.classList.add("contact-us");
   contacts.appendChild(createContacts());
